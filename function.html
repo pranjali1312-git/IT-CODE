@@ -1,0 +1,24 @@
+
+<html>
+	<head>
+		<title>
+		</title>
+	</head>
+	<body>
+		<script>
+		function f(){
+		var a = document.getElementById("d1");
+		var b = document.getElementById("d2");
+		var c = document.getElementById("d3");
+		c.value=parseInt(a.value) + parseInt(b.value);
+		}
+		</script>
+		Enter a value <input type="text" id="d1"> <br>
+		Enter another value <input type="text" id="d2"> <br>
+		<input type="button" value="+" onClick="f()">
+		<input type="button" value="-" onClick="g()">
+		<input type="button" value="*" onClick="h()">
+		<input type="button" value="/" onClick="i()"> <br>
+		sum = <input type="text" id="d3">
+	</body>
+</html>

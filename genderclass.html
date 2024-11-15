@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title>
+		</title>
+	</head>
+	<body>
+		<script>
+		function f(){
+		var a=document.getElementsByName("gender");
+		var b=document.getElementById("d1");
+		var c=document.getElementsByName("class");
+		var ch = " ";
+		ch=ch+b.value+" is ";
+		
+		for(i=0;i<a.length;i++)
+		{
+			if(a[i].checked)
+				ch=ch+a[i].value+"  and reads in ";
+		}
+		for(i=0;i<c.length;i++)
+		{
+			if(c[i].checked)
+				ch=ch+c[i].value;		
+		}
+		document.write(ch);
+		}
+		</script>
+		Name: <input type="text" id="d1">
+		<br>
+		Gender: 
+		<input type="radio" name="gender" value="male">Male &nbsp
+		<input type="radio" name="gender" value="female">Female
+		<br>
+		Class:
+		<input type="radio" name="class" value="ba">B.A &nbsp
+		<input type="radio" name="class" value="bsc">B.Sc &nbsp
+		<input type="radio" name="class" value="bcom">B.Com
+		<input type="button" value="click" onClick = "f()">
+	</body>
+</html>

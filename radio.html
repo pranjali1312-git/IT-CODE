@@ -1,0 +1,21 @@
+
+<html>
+	<head>
+		<title>
+		</title>
+	</head>
+	<body>
+		<script>
+		function f(){
+		var a=document.getElementsByName("gender");
+		if(a[0].checked == true)
+			document.write(a[0].value);
+		if(a[1].checked == true)
+			document.write(a[1].value);
+		}
+		</script>
+		<input type="radio" name="gender" value="male">Male <br>
+		<input type="radio" name="gender" value="female">Female
+		<input type="button" value="click" onClick = "f()">
+	</body>
+</html>

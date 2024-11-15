@@ -1,0 +1,30 @@
+<!--  prime number checking -->
+
+<html>
+	<head>
+		<title>
+		factorial
+		</title>
+	</head>
+	<body>
+		<script>
+		var n = prompt("Enter a number");
+		var b= " ";
+		for(a=1;a<=n;a+=1)
+		{
+			
+		var count = 0;
+		for(i=1;i<=a;i++)
+		{
+			if(a%i==0)
+			{
+				b=b+i+" ";
+				count = count+1;
+			}
+		}
+		if (count==2)
+			document.write(a," ");
+		}
+		</script>
+	</body>
+</html>

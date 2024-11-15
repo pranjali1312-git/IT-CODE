@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>
+		</title>
+	</head>
+	<body>
+		<script>
+		function f(){
+		var a=document.getElementsByName("class");
+		var b=document.getElementById("d1");
+		var c=document.getElementsByName("skill");
+		var ch = " ";
+		ch=ch+b.value+" reads in ";
+		
+		for(i=0;i<a.length;i++)
+		{
+			if(a[i].checked)
+				ch=ch+a[i].value+"  and have skills ";
+		}
+		for(i=0;i<c.length;i++)
+		{
+			if(c[i].checked)
+				ch=ch+c[i].value+" ";		
+		}
+		document.write(ch);
+		}
+		</script>
+		Name: <input type="text" id="d1">
+		<br>
+		Gender: 
+		<input type="radio" name="class" value="ba">BA <br>
+		&nbsp &nbsp<input type="radio" name="class" value="bsc">Bsc <br>
+		&nbsp &nbsp<input type="radio" name="class" value="bcom">BCom
+		<br>
+		Skill:
+		<input type="checkbox" name="skill" value="c">C <br>
+		&nbsp <input type="checkbox" name="skill" value="c++">C++ <br>
+		&nbsp <input type="checkbox" name="skill" value="java">Java <br>
+		&nbsp <input type="checkbox" name="skill" value="python">Python
+		&nbsp <input type="button" value="click" onClick = "f()">
+	</body>
+</html>
