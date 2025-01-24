@@ -1,0 +1,32 @@
+<html>
+	<head><title></title><head>
+	<body>
+		<script>
+			function f(){
+			var a = document.getElementById("d1");
+			var b = document.getElementsByName("gender");
+			var c = document.getElementsByName("course");
+			var ch = " ";
+			ch = ch+a.value+" is"+" ";
+			for(var i=0;i<b.length;i++)
+			{
+				if(b[i].checked)
+					ch=ch+b[i].value+" "+"and course is ";
+			}
+			for(var i=0;i<c.length;i++)
+			{
+				if(c[i].checked)
+					ch=ch+c[i].value+" ";
+			}
+
+			document.write(ch);
+			}
+		</script>
+		Name <input type="text"  id="d1"> <br>
+		<input type="checkbox" name = "gender" value="male">Male <br>
+		<input type="checkbox" name = "gender" value= "female">Female <br>
+		<input type="checkbox" name = "course" value= "bca">BCA <br>
+		<input type="checkbox" name = "course" value= "bsc">BSc <br>
+		<input type="button" value="click" onclick="f()">
+	</body>
+<html>

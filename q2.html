@@ -1,0 +1,23 @@
+<html>
+	<head><title></title><head>
+	<body>
+		<script>
+			function f(){
+			var a = document.getElementById("d1");
+			var b = document.getElementsByName("gender");
+			var ch = " ";
+			ch = ch+a.value+"is"+" ";
+			for(var i=0;i<b.length;i++)
+			{
+				if(b[i].checked)
+					ch=ch+b[i].value+" ";
+			}
+			document.write(ch);
+			}
+		</script>
+		Name <input type="text"  id="d1"> <br>
+		<input type="radio" name = "gender" value="male">Male <br>
+		<input type="radio" name = "gender" value= "female">Female <br>
+		<input type="button" value="click" onclick="f()">
+	</body>
+<html>

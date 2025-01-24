@@ -1,0 +1,23 @@
+<html>
+	<head><title></title><head>
+	<body>
+		<script>
+			function f(){
+			var a = document.getElementById("d1");
+			var b = document.getElementById("d2");
+			var c = document.getElementById("d3");
+			var d = document.getElementById("d4");
+			
+			var p = parseInt(b.value);
+			var r = parseInt(c.value);
+			var t = parseInt(a.value);
+			d.value = p + (p*r*t)/100;
+			}
+		</script>
+		year <input type="text" id="d1"> <br>
+		amount <input type="text" id="d2"> <br>
+		interest rate <input type="text" id="d3"> <br>
+		interest + amount = <input type="text" id="d4"> <br>
+		<input type="button" value="click" onclick="f()">
+	</body>
+<html>
