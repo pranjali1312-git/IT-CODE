@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function multiply(){
+            var num1 = document.getElementById("d1").value;
+            var num2 = document.getElementById("d2").value;
+            var result = parseFloat(num1) * parseFloat(num2);
+            document.getElementById("d3").value = result;
+        }
+        function division(){
+            var num1 = document.getElementById("d1").value;
+            var num2 = document.getElementById("d2").value;
+            var result = parseFloat(num1) / parseFloat(num2);
+            document.getElementById("d4").value = result;
+        }
+    </script>
+    Enter 1st number : <input type="number" id="d1"><br />
+    Enter 2nd number : <input type="number" id="d2"><br />
+    Multiplication : <input type="number" id="d3"><br />
+    Division : <input type="number" id="d4"><br />
+    <button onclick="multiply()">multiply</button>
+    <button onclick="division()">division</button>
+</body>
+</html>

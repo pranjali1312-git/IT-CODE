@@ -1,0 +1,36 @@
+<html>
+	<head> <title> </title> </head>
+	<body>
+		<script>
+		var d = new Date();
+		var k = d.getDay();
+		var s = "Today is ";
+		if(k == 0){
+			s=s+"Sunday";
+		}
+		else if(k == 1){
+            s=s+"Monday";
+        }
+		else if(k == 2){
+			s=s+"Tuesday";
+        }
+		else if(k == 3){
+			s=s+"Wednesday";
+        }
+		else if(k == 4){
+            s=s+"Thursday";
+        }
+		else if(k == 5){
+			s=s+"Friday";
+        }
+		else if(k == 6){
+			s=s+"Saturday";
+        }
+		else{
+            document.write("Invalid date");
+        }
+
+		document.write(s);
+		</script>
+	</body>
+</html>

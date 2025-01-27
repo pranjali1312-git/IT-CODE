@@ -1,0 +1,21 @@
+<html>
+	<head> <title> </title> </head>
+	<body>
+		<script>
+		var d = new Date(2025);
+		document.write(d+ '<br>');
+		var d1 = new Date(2003,10);
+		document.write(d1+ '<br>');
+		var d2 = new Date(2003,10,15);
+		document.write(d2+ '<br>');
+		var d3 = new Date(2003,10,15,08);
+		document.write(d3+ '<br>');
+		var d4 = new Date(2003,10,15,08,22);
+		document.write(d4+ '<br>');
+		var d5 = new Date(2003,10,15,08,22,56);
+		document.write(d5+ '<br>');
+		var d6 = new Date(100000000000);
+		document.write(d6+ '<br>');
+		</script>
+	</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function Ferhanite() {
+        var C = document.getElementById("d1");
+        var F = document.getElementById("d2");
+        F.value = (C.value * 9) / 5 + 32;
+      }
+      function Celcius() {
+        var C = document.getElementById("d1");
+        var F = document.getElementById("d2");
+        C.value = ((F.value - 32) * 5) / 9;
+      }
+    </script>
+    Enter Celcius Temperature
+    <input type="text" id="d1" /> 
+    <br />
+    Enter Ferhanite Temperature
+    <input type="text" id="d2" /> 
+    <br />
+    <input type="button" value="c" onClick="Celcius()" />
+    <input type="button" value="f" onClick="Ferhanite()" /> <br />
+  </body>
+</html>

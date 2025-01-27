@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function f() {
+        var name = document.getElementById("d1").value;
+        var re = /^[a-zA-Z]+$/;
+        if (name.match(re)) {
+          alert("Valid Name");
+        }
+        if (name.length == 0) {
+          alert("Name field can't be empty");
+        }
+        else{
+          alert("Invalid Name");
+        }
+      }
+    </script>
+    Enter name : <input type="text" id="d1" />
+    <button onclick="f()">Click</button>
+  </body>
+</html>

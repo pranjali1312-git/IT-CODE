@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = prompt("Enter a text message").split('');
+        var i, count=0;
+        for (var i = 0; i <a.length; i++) {
+            if(a[i]=='a' || a[i]=='e' || a[i]=='i' || a[i]=='o' || a[i]=='u'){
+                count++;
+            }
+        }
+        document.write("total vowels: " + count);
+    </script>
+</body>
+</html>

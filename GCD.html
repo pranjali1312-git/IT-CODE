@@ -1,0 +1,27 @@
+<html>
+ <head>
+ <title>question 1</title>
+ <script> function f(){
+       var n= document.getElementById("t1");
+       var k= document.getElementById("t2");
+       var m= document.getElementById("t3");
+             var x=parseInt(n.value);
+             var y=parseInt(k.value);
+             for(i=1;i<=x;i++)
+                { 
+                 if(x%i==0&& y%i==0)
+                   { 
+                     var g=i;
+                   }   
+                }
+                m.value=g;
+    }
+ </script>
+ </head>
+ <body>
+      a<input type="text" id="t1"><br>
+      b<input type="text" id="t2"><br>
+      GCD=<input type="text" id="t3">
+      <input type= "button" value="click" onclick="f()">   <br>
+ </body>
+ </html>
